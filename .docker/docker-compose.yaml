@@ -1,3 +1,4 @@
+version: "3"
 services:
   frontend:
     build:
@@ -26,7 +27,7 @@ services:
     networks:
       - express-mongo
       - react-express
-    expose: 
+    expose:
       - 3000
   mongo:
     restart: always
